@@ -37,6 +37,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
+        
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
